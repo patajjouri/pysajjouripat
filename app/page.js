@@ -7,16 +7,25 @@ export default function Home() {
         
         <div style={{ display: "flex", height: "100%" }}>
           
-          {/* YOUR PHOTO (Color Harmonized) */}
-          <img
-            src="/patricia.png"
-            alt="Patricia Ajjouri"
+          {/* YOUR PHOTO (Wrapped in div for reliable filter) */}
+          <div
             style={{
               width: "50%",
-              objectFit: "cover",
-              filter: "brightness(1.05) contrast(0.95) saturate(0.9) sepia(0.15)"
+              height: "100%",
+              overflow: "hidden",
+              filter: "brightness(1.03) contrast(0.95) saturate(0.9) sepia(0.15)"
             }}
-          />
+          >
+            <img
+              src="/patricia.png"
+              alt="Patricia Ajjouri"
+              style={{
+                width: "100%",
+                height: "100%",
+                objectFit: "cover"
+              }}
+            />
+          </div>
 
           {/* SOFA IMAGE */}
           <img

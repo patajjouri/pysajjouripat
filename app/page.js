@@ -6,16 +6,9 @@ export default function Home() {
       <section style={{ position: "relative", width: "100%", height: "80vh", overflow: "hidden" }}>
         
         <div style={{ display: "flex", height: "100%" }}>
-          
-          {/* YOUR PHOTO (Wrapped in div for reliable filter) */}
-          <div
-            style={{
-              width: "50%",
-              height: "100%",
-              overflow: "hidden",
-              filter: "brightness(1.03) contrast(0.95) saturate(0.9) sepia(0.15)"
-            }}
-          >
+
+          {/* LEFT SIDE — YOUR PHOTO WITH WARM OVERLAY */}
+          <div style={{ position: "relative", width: "50%", height: "100%", overflow: "hidden" }}>
             <img
               src="/patricia.png"
               alt="Patricia Ajjouri"
@@ -25,17 +18,35 @@ export default function Home() {
                 objectFit: "cover"
               }}
             />
+
+            {/* Warm Beige Overlay */}
+            <div
+              style={{
+                position: "absolute",
+                top: 0,
+                left: 0,
+                width: "100%",
+                height: "100%",
+                backgroundColor: "rgba(245, 221, 189, 0.35)",
+                pointerEvents: "none"
+              }}
+            />
           </div>
 
-          {/* SOFA IMAGE */}
+          {/* RIGHT SIDE — SOFA IMAGE */}
           <img
             src="/Therapy.jpg"
             alt="Therapy Space"
-            style={{ width: "50%", objectFit: "cover" }}
+            style={{
+              width: "50%",
+              height: "100%",
+              objectFit: "cover"
+            }}
           />
+
         </div>
 
-        {/* Overlay Text */}
+        {/* CENTER OVERLAY TEXT */}
         <div
           style={{
             position: "absolute",
@@ -46,7 +57,7 @@ export default function Home() {
             color: "#2d2d2d",
             backgroundColor: "rgba(245,241,235,0.75)",
             backdropFilter: "blur(4px)",
-            padding: "40px 60px",
+            padding: "40px 60px"
           }}
         >
           <h1 style={{ fontSize: "48px", margin: "0", fontWeight: "400" }}>

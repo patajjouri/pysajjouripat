@@ -6,16 +6,19 @@ export default function Home() {
       <section style={{ position: "relative", width: "100%", height: "80vh", overflow: "hidden" }}>
         
         <div style={{ display: "flex", height: "100%" }}>
+          
+          {/* YOUR PHOTO (Color Harmonized) */}
           <img
-         <img
-  src="/patricia.png"
-  alt="Patricia Ajjouri"
-  style={{
-    width: "50%",
-    objectFit: "cover",
-    filter: "warm(1)",
-  }}
-/>
+            src="/patricia.png"
+            alt="Patricia Ajjouri"
+            style={{
+              width: "50%",
+              objectFit: "cover",
+              filter: "brightness(1.05) contrast(0.95) saturate(0.9) sepia(0.15)"
+            }}
+          />
+
+          {/* SOFA IMAGE */}
           <img
             src="/Therapy.jpg"
             alt="Therapy Space"
@@ -32,7 +35,8 @@ export default function Home() {
             transform: "translate(-50%, -50%)",
             textAlign: "center",
             color: "#2d2d2d",
-            backgroundColor: "rgba(245,241,235,0.85)",
+            backgroundColor: "rgba(245,241,235,0.75)",
+            backdropFilter: "blur(4px)",
             padding: "40px 60px",
           }}
         >

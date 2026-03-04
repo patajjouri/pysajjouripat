@@ -53,7 +53,7 @@ export default function Home() {
       {/* Right Side - Therapy Room */}
       <div style={{
         flex: "1 1 50%",
-        backgroundImage: "url('/therapy.jpg')",
+        backgroundImage: "url('/Therapy.jpg')",
         backgroundSize: "cover",
         backgroundPosition: "center",
         minHeight: "500px"

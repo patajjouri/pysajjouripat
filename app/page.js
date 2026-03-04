@@ -1,4 +1,5 @@
 <div style={{ display: "flex", minHeight: "100vh" }}>
+  {/* Right - Therapy Scene */}
   <div style={{
     flex: "1 1 50%",
     minHeight: "500px",
@@ -10,7 +11,6 @@
     justifyContent: "center",
     padding: "40px"
   }}>
-    {/* Inner content */}
     <h2 style={{ color: "white" }}>Therapy Room</h2>
   </div>
 </div>

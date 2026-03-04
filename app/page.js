@@ -18,7 +18,6 @@ export default function Home() {
                 objectFit: "cover"
               }}
             />
-
             {/* Warm Beige Overlay */}
             <div
               style={{
@@ -34,15 +33,13 @@ export default function Home() {
           </div>
 
           {/* RIGHT SIDE — SOFA IMAGE */}
-          <img
-            src="/Therapy.jpg"
-            alt="Therapy Space"
-            style={{
-              width: "50%",
-              height: "100%",
-              objectFit: "cover"
-            }}
-          />
+          <div style={{ width: "50%", height: "100%", overflow: "hidden" }}>
+            <img
+              src="/Therapy.jpg"
+              alt="Therapy Space"
+              style={{ width: "100%", height: "100%", objectFit: "cover" }}
+            />
+          </div>
 
         </div>
 
@@ -67,6 +64,7 @@ export default function Home() {
             CLINICAL PSYCHOLOGIST | PSYCHOANALYTIC APPROACH
           </p>
         </div>
+
       </section>
 
       {/* STATEMENT */}

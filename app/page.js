@@ -7,14 +7,14 @@ export default function Home() {
         
         <div style={{ display: "flex", height: "100%" }}>
           <img
-           <img
-        src="/patricia.png"
-          alt="Patricia Ajjouri"
-            style={{
-              width: "50%",
-              objectFit: "cover",
-              filter: "warm(1)",
-            }}
+         <img
+  src="/patricia.png"
+  alt="Patricia Ajjouri"
+  style={{
+    width: "50%",
+    objectFit: "cover",
+    filter: "warm(1)",
+  }}
 />
           <img
             src="/Therapy.jpg"

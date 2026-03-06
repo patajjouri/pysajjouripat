@@ -5,89 +5,143 @@ export default function Home() {
       {/* HERO SECTION */}
       <section
         style={{
-          backgroundImage: "url('/therapy-room.jpg')",
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "space-between",
+          padding: "60px",
+          backgroundImage: "url('/therapy-sofa.jpg')",
           backgroundSize: "cover",
           backgroundPosition: "center",
-          padding: "120px 20px",
-          textAlign: "center",
-          color: "white"
+          minHeight: "500px"
         }}
       >
+
+        {/* LEFT TEXT */}
+        <div
+          style={{
+            backgroundColor: "rgba(255,255,255,0.85)",
+            padding: "40px",
+            borderRadius: "12px",
+            maxWidth: "500px"
+          }}
+        >
+          <h1 style={{fontSize:"42px", marginBottom:"10px"}}>
+            Patricia Ajjouri
+          </h1>
+
+          <h2 style={{color:"#666", marginBottom:"20px"}}>
+            Clinical Psychologist
+          </h2>
+
+          <p style={{fontSize:"18px", lineHeight:"1.6"}}>
+            Providing a calm and supportive space for personal growth,
+            emotional balance, and mental wellbeing.
+          </p>
+
+          <a
+            href="https://wa.me/551199816969"
+            style={{
+              display:"inline-block",
+              marginTop:"20px",
+              padding:"14px 24px",
+              backgroundColor:"#25D366",
+              color:"white",
+              borderRadius:"8px",
+              textDecoration:"none",
+              fontWeight:"bold"
+            }}
+          >
+            Contact on WhatsApp
+          </a>
+        </div>
+
+        {/* YOUR PHOTO */}
         <img
           src="/patricia.jpg"
           alt="Patricia Ajjouri"
           style={{
-            width: "200px",
-            borderRadius: "100%",
-            border: "4px solid white",
-            marginBottom: "20px",
-            filter: "sepia(20%) saturate(90%) brightness(105%)"
+            width:"320px",
+            borderRadius:"14px",
+            boxShadow:"0 10px 30px rgba(0,0,0,0.2)"
           }}
         />
 
-        <h1>Patricia Ajjouri</h1>
-        <h3>Clinical Psychologist</h3>
-
-        <p style={{maxWidth:"600px", margin:"20px auto"}}>
-          Supporting emotional wellbeing through compassionate and
-          professional psychological care.
-        </p>
       </section>
+
 
       {/* ABOUT SECTION */}
-      <section style={{padding:"60px 20px", textAlign:"center"}}>
-        <h2>About</h2>
+      <section
+        style={{
+          padding:"70px 20px",
+          textAlign:"center",
+          maxWidth:"900px",
+          margin:"auto"
+        }}
+      >
 
-        <p style={{maxWidth:"700px", margin:"auto"}}>
-          I provide psychological support for individuals seeking emotional
-          balance, self-understanding, and personal growth. My work focuses on
-          creating a safe and respectful therapeutic space where clients can
-          explore their experiences and strengthen their wellbeing.
+        <h2 style={{fontSize:"34px", marginBottom:"20px"}}>
+          About Me
+        </h2>
+
+        <p style={{fontSize:"18px", lineHeight:"1.7"}}>
+          I am a clinical psychologist dedicated to helping individuals
+          navigate emotional challenges and develop healthier patterns
+          in their lives. My work focuses on providing a safe and
+          compassionate environment where clients can explore their
+          thoughts, feelings, and experiences.
         </p>
+
       </section>
+
 
       {/* CONTACT SECTION */}
       <section
         style={{
-          background:"#f4f6f7",
-          padding:"60px 20px",
+          backgroundColor:"#f4f4f4",
+          padding:"60px",
           textAlign:"center"
         }}
       >
-        <h2>Contact</h2>
 
-        <p>Email: pyspatajjouri@gmail.com</p>
+        <h2 style={{fontSize:"32px", marginBottom:"20px"}}>
+          Contact
+        </h2>
 
-        <p>Phone / WhatsApp: +55 11 99816-969</p>
+        <p style={{fontSize:"18px", marginBottom:"10px"}}>
+          Email: pyspatajjouri@gmail.com
+        </p>
+
+        <p style={{fontSize:"18px", marginBottom:"20px"}}>
+          Phone / WhatsApp: +55 11 99816-969
+        </p>
 
         <a
           href="https://wa.me/551199816969"
-          target="_blank"
           style={{
-            display:"inline-block",
-            marginTop:"20px",
-            padding:"12px 25px",
-            background:"#25D366",
+            padding:"14px 26px",
+            backgroundColor:"#25D366",
             color:"white",
-            borderRadius:"30px",
+            borderRadius:"8px",
             textDecoration:"none",
             fontWeight:"bold"
           }}
         >
-          Message on WhatsApp
+          Message me on WhatsApp
         </a>
+
       </section>
+
 
       {/* FOOTER */}
       <footer
         style={{
           textAlign:"center",
           padding:"20px",
-          fontSize:"14px",
-          background:"#ffffff"
+          background:"#222",
+          color:"white"
         }}
       >
-        © Patricia Ajjouri – Clinical Psychologist
+        © {new Date().getFullYear()} Patricia Ajjouri
       </footer>
 
     </main>

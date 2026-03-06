@@ -138,44 +138,48 @@ export default function Home() {
 >
 
   <h2 style={{fontSize:"32px", marginBottom:"20px"}}>
-    Contact
-  </h2>
+   {/* CONTACT */}
+<section style={{ padding: "80px 20px", maxWidth: "900px", margin: "0 auto", textAlign: "center" }}>
+  <h2 style={{ fontSize: "32px", marginBottom: "30px" }}>Contact</h2>
 
-  <p style={{fontSize:"18px"}}>
-    Email: 
+  <p>Online psychotherapy available worldwide.</p>
+
+  <p style={{ marginTop: "10px" }}>
+    Languages: Arabic, English, Portuguese
+  </p>
+
+  <p style={{ marginTop: "25px", fontSize: "18px" }}>
+    Email:{" "}
     <a href="mailto:pyspatajjouri@gmail.com">
       pyspatajjouri@gmail.com
     </a>
   </p>
 
-  <p style={{fontSize:"18px"}}>
-    Phone / WhatsApp: 
+  <p style={{ marginTop: "10px", fontSize: "18px" }}>
+    Phone / WhatsApp:{" "}
     <a href="https://wa.me/551199816969" target="_blank">
-      055 11 99816-969
+      +55 11 99816-969
     </a>
   </p>
-
-  <br/>
 
   <a
     href="https://wa.me/551199816969"
     target="_blank"
     style={{
-      background:"#25D366",
-      color:"white",
-      padding:"14px 26px",
-      borderRadius:"8px",
-      textDecoration:"none",
-      fontWeight:"bold",
-      fontSize:"18px"
+      display: "inline-block",
+      marginTop: "25px",
+      padding: "14px 28px",
+      backgroundColor: "#25D366",
+      color: "white",
+      borderRadius: "8px",
+      textDecoration: "none",
+      fontWeight: "bold"
     }}
   >
     Message me on WhatsApp
   </a>
 
 </section>
-        </p>
-      </section>
 
     </main>
   );

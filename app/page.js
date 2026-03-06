@@ -136,6 +136,48 @@ export default function Home() {
           Languages: Arabic, English, Portuguese
         </p>
       </section>
+            {/* Contact Section */}
+<section
+  style={{
+    padding: "80px 20px",
+    textAlign: "center",
+    backgroundColor: "#f6f3ef"
+  }}
+>
+  <h2 style={{ fontSize: "32px", marginBottom: "20px" }}>
+    Contact
+  </h2>
+
+  <p style={{ fontSize: "18px", marginBottom: "10px" }}>
+    Email: 
+    <a href="mailto:pyspatajjouri@gmail.com">
+      pyspatajjouri@gmail.com
+    </a>
+  </p>
+
+  <p style={{ fontSize: "18px", marginBottom: "30px" }}>
+    Phone / WhatsApp: 
+    <a href="https://wa.me/551199816969">
+      +55 11 99816-969
+    </a>
+  </p>
+
+  <a
+    href="https://wa.me/551199816969"
+    target="_blank"
+    style={{
+      backgroundColor: "#25D366",
+      color: "white",
+      padding: "14px 28px",
+      borderRadius: "30px",
+      textDecoration: "none",
+      fontSize: "18px",
+      fontWeight: "bold"
+    }}
+  >
+    Message on WhatsApp
+  </a>
+</section>
 
     </main>
   );

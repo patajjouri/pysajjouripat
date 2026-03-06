@@ -7,10 +7,10 @@ export default function Home() {
         
         <div style={{ display: "flex", height: "100%" }}>
 
-          {/* LEFT SIDE — YOUR PHOTO */}
+          {/* LEFT SIDE — YOUR PHOTO WITH WARM OVERLAY */}
           <div style={{ position: "relative", width: "50%", height: "100%", overflow: "hidden" }}>
             <img
-              src="/patricia.jpg"
+              src="/patricia.png"
               alt="Patricia Ajjouri"
               style={{
                 width: "100%",
@@ -18,8 +18,7 @@ export default function Home() {
                 objectFit: "cover"
               }}
             />
-
-            {/* Warm overlay */}
+            {/* Warm Beige Overlay */}
             <div
               style={{
                 position: "absolute",
@@ -27,27 +26,24 @@ export default function Home() {
                 left: 0,
                 width: "100%",
                 height: "100%",
-                backgroundColor: "rgba(245,221,189,0.35)"
+                backgroundColor: "rgba(245, 221, 189, 0.35)",
+                pointerEvents: "none"
               }}
             />
           </div>
 
-          {/* RIGHT SIDE — THERAPY IMAGE */}
+          {/* RIGHT SIDE — SOFA IMAGE */}
           <div style={{ width: "50%", height: "100%", overflow: "hidden" }}>
             <img
-              src="/therapy.jpg"
+              src="/Therapy.jpg"
               alt="Therapy Space"
-              style={{
-                width: "100%",
-                height: "100%",
-                objectFit: "cover"
-              }}
+              style={{ width: "100%", height: "100%", objectFit: "cover" }}
             />
           </div>
 
         </div>
 
-        {/* CENTER TEXT */}
+        {/* CENTER OVERLAY TEXT */}
         <div
           style={{
             position: "absolute",
@@ -55,6 +51,7 @@ export default function Home() {
             left: "50%",
             transform: "translate(-50%, -50%)",
             textAlign: "center",
+            color: "#2d2d2d",
             backgroundColor: "rgba(245,241,235,0.75)",
             backdropFilter: "blur(4px)",
             padding: "40px 60px"
@@ -63,7 +60,6 @@ export default function Home() {
           <h1 style={{ fontSize: "48px", margin: "0", fontWeight: "400" }}>
             Patricia Ajjouri
           </h1>
-
           <p style={{ marginTop: "10px", letterSpacing: "2px" }}>
             CLINICAL PSYCHOLOGIST | PSYCHOANALYTIC APPROACH
           </p>
@@ -84,12 +80,10 @@ export default function Home() {
       {/* ABOUT */}
       <section style={{ padding: "80px 20px", maxWidth: "900px", margin: "0 auto" }}>
         <h2 style={{ fontSize: "32px", marginBottom: "30px" }}>About</h2>
-
         <p style={{ lineHeight: "1.8" }}>
           I am a licensed Clinical Psychologist grounded in the psychoanalytic approach,
           offering a space where speech, listening, and subjective experience are central.
         </p>
-
         <p style={{ lineHeight: "1.8", marginTop: "20px" }}>
           I am currently in my second year of specialization in Clinical Attendance in
           Sexual Diversity and Gender at IPPERG, and as a student at Fórum Lacan São Paulo,
@@ -99,7 +93,7 @@ export default function Home() {
 
       <hr style={{ width: "80%", margin: "0 auto", borderColor: "#d8d2c8" }} />
 
-      {/* PRACTICE AREAS */}
+      {/* PRACTICE AREAS & COMMUNITY */}
       <section
         style={{
           display: "flex",
@@ -113,7 +107,6 @@ export default function Home() {
       >
         <div style={{ flex: "1", minWidth: "300px" }}>
           <h2 style={{ fontSize: "32px", marginBottom: "30px" }}>Practice Areas</h2>
-
           <ul style={{ lineHeight: "2" }}>
             <li>Adult psychotherapy</li>
             <li>Sexual diversity and gender</li>
@@ -125,7 +118,6 @@ export default function Home() {
 
         <div style={{ flex: "1", minWidth: "300px" }}>
           <h2 style={{ fontSize: "32px", marginBottom: "30px" }}>Community Engagement</h2>
-
           <p style={{ lineHeight: "1.8" }}>
             I volunteer with ESOU, supporting the LGBTQIAPIA+ elderly community,
             and with Sout, assisting Palestinian refugees with mental health care
@@ -137,49 +129,12 @@ export default function Home() {
       <hr style={{ width: "80%", margin: "0 auto", borderColor: "#d8d2c8" }} />
 
       {/* CONTACT */}
-      <section style={{ padding: "80px 20px", maxWidth: "900px", margin: "0 auto", textAlign: "center" }}>
-        
+      <section style={{ padding: "80px 20px", maxWidth: "900px", margin: "0 auto" }}>
         <h2 style={{ fontSize: "32px", marginBottom: "30px" }}>Contact</h2>
-
         <p>Online psychotherapy available worldwide.</p>
-
         <p style={{ marginTop: "10px" }}>
           Languages: Arabic, English, Portuguese
         </p>
-
-        <p style={{ marginTop: "25px", fontSize: "18px" }}>
-          Email:
-          <br />
-          <a href="mailto:pyspatajjouri@gmail.com">
-            pyspatajjouri@gmail.com
-          </a>
-        </p>
-
-        <p style={{ marginTop: "15px", fontSize: "18px" }}>
-          Phone / WhatsApp:
-          <br />
-          <a href="https://wa.me/551199816969" target="_blank">
-            +55 11 99816-969
-          </a>
-        </p>
-
-        <a
-          href="https://wa.me/551199816969"
-          target="_blank"
-          style={{
-            display: "inline-block",
-            marginTop: "25px",
-            padding: "14px 28px",
-            backgroundColor: "#25D366",
-            color: "white",
-            borderRadius: "8px",
-            textDecoration: "none",
-            fontWeight: "bold"
-          }}
-        >
-          Message on WhatsApp
-        </a>
-
       </section>
 
     </main>

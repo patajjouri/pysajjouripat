@@ -7,10 +7,10 @@ export default function Home() {
         
         <div style={{ display: "flex", height: "100%" }}>
 
-          {/* LEFT SIDE — YOUR PHOTO */}
+          {/* LEFT SIDE — YOUR PHOTO WITH WARM OVERLAY */}
           <div style={{ position: "relative", width: "50%", height: "100%", overflow: "hidden" }}>
             <img
-              src="/patricia.jpg"
+              src="/patricia.png"
               alt="Patricia Ajjouri"
               style={{
                 width: "100%",
@@ -18,6 +18,7 @@ export default function Home() {
                 objectFit: "cover"
               }}
             />
+            {/* Warm Beige Overlay */}
             <div
               style={{
                 position: "absolute",
@@ -34,7 +35,7 @@ export default function Home() {
           {/* RIGHT SIDE — SOFA IMAGE */}
           <div style={{ width: "50%", height: "100%", overflow: "hidden" }}>
             <img
-              src="/therapy.jpg"
+              src="/Therapy.jpg"
               alt="Therapy Space"
               style={{ width: "100%", height: "100%", objectFit: "cover" }}
             />
@@ -42,7 +43,7 @@ export default function Home() {
 
         </div>
 
-        {/* CENTER TEXT */}
+        {/* CENTER OVERLAY TEXT */}
         <div
           style={{
             position: "absolute",
@@ -92,7 +93,7 @@ export default function Home() {
 
       <hr style={{ width: "80%", margin: "0 auto", borderColor: "#d8d2c8" }} />
 
-      {/* PRACTICE AREAS */}
+      {/* PRACTICE AREAS & COMMUNITY */}
       <section
         style={{
           display: "flex",
@@ -130,20 +131,10 @@ export default function Home() {
       {/* CONTACT */}
       <section style={{ padding: "80px 20px", maxWidth: "900px", margin: "0 auto" }}>
         <h2 style={{ fontSize: "32px", marginBottom: "30px" }}>Contact</h2>
-
         <p>Online psychotherapy available worldwide.</p>
-
         <p style={{ marginTop: "10px" }}>
           Languages: Arabic, English, Portuguese
         </p>
-
-        <p style={{ marginTop: "30px", fontSize: "18px" }}>
-          Contact:{" "}
-          <a href="mailto:your@email.com">Email</a>{" "}
-          |{" "}
-          <a href="https://wa.me/YOURNUMBER">WhatsApp</a>
-        </p>
-
       </section>
 
     </main>

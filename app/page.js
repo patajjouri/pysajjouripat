@@ -1,71 +1,74 @@
 export default function Home() {
   return (
-    <main style={{ fontFamily: "Arial, sans-serif", color: "#2c3e50" }}>
-      
+    <main style={{fontFamily:"Arial, sans-serif"}}>
+
       {/* HERO SECTION */}
       <section
         style={{
-          display: "flex",
-          alignItems: "center",
-          justifyContent: "space-between",
-          padding: "80px 10%",
-          backgroundImage: "url('/therapy.jpg')",
-          backgroundSize: "cover",
-          backgroundPosition: "center",
+          display:"flex",
+          alignItems:"center",
+          justifyContent:"space-between",
+          padding:"80px 10%",
+          backgroundImage:"url('/therapy.jpg')",
+          backgroundSize:"cover",
+          backgroundPosition:"center",
+          minHeight:"500px"
         }}
       >
+
         {/* LEFT TEXT */}
         <div
           style={{
-            background: "rgba(255,255,255,0.85)",
-            padding: "40px",
-            borderRadius: "10px",
-            maxWidth: "500px",
+            background:"rgba(255,255,255,0.85)",
+            padding:"40px",
+            borderRadius:"10px",
+            maxWidth:"500px"
           }}
         >
-          <h1 style={{ fontSize: "42px", marginBottom: "10px" }}>
+          <h1 style={{fontSize:"40px", marginBottom:"10px"}}>
             Patricia Ajjouri
           </h1>
 
-          <h2 style={{ fontWeight: "normal", marginBottom: "20px" }}>
+          <h2 style={{fontWeight:"normal", marginBottom:"20px"}}>
             Clinical Psychologist
           </h2>
 
-          <p style={{ lineHeight: "1.6" }}>
-            A calm and supportive space for reflection, healing, and personal
-            growth. My work focuses on helping individuals navigate emotional
-            challenges, anxiety, relationships, and life transitions.
+          <p style={{lineHeight:"1.6"}}>
+            Providing a calm and supportive space for reflection, healing and personal growth.
+            I work with individuals experiencing anxiety, emotional challenges,
+            relationship difficulties and life transitions.
           </p>
         </div>
 
-        {/* RIGHT PHOTO */}
-        <div>
-          <img
-            src="/patricia.jpg"
-            alt="Patricia Ajjouri"
-            style={{
-              width: "320px",
-              borderRadius: "10px",
-              boxShadow: "0 10px 30px rgba(0,0,0,0.2)",
-            }}
-          />
-        </div>
+        {/* PHOTO */}
+        <img
+          src="/patricia.jpg"
+          alt="Patricia Ajjouri"
+          style={{
+            width:"320px",
+            borderRadius:"10px",
+            boxShadow:"0 10px 25px rgba(0,0,0,0.25)"
+          }}
+        />
+
       </section>
 
-      {/* ABOUT SECTION */}
-      <section style={{ padding: "60px 10%", background: "#f6f9f8" }}>
+
+      {/* ABOUT */}
+      <section style={{padding:"60px 10%", background:"#f5f7f6"}}>
         <h2>About</h2>
 
-        <p style={{ maxWidth: "700px", lineHeight: "1.7" }}>
-          I provide psychological support in a respectful, confidential, and
-          compassionate environment. My goal is to help individuals better
-          understand themselves, manage emotional difficulties, and develop
-          healthier ways of relating to themselves and others.
+        <p style={{maxWidth:"700px", lineHeight:"1.7"}}>
+          I offer psychological support in a respectful, confidential and compassionate
+          environment. My goal is to help people understand themselves better,
+          manage emotional difficulties and develop healthier ways of relating
+          to themselves and others.
         </p>
       </section>
 
-      {/* CONTACT SECTION */}
-      <section style={{ padding: "60px 10%" }}>
+
+      {/* CONTACT */}
+      <section style={{padding:"60px 10%"}}>
         <h2>Contact</h2>
 
         <p>Email: pyspatajjouri@gmail.com</p>
@@ -76,32 +79,32 @@ export default function Home() {
           href="https://wa.me/551199816969"
           target="_blank"
           style={{
-            display: "inline-block",
-            marginTop: "15px",
-            padding: "12px 22px",
-            background: "#25D366",
-            color: "white",
-            borderRadius: "6px",
-            textDecoration: "none",
-            fontWeight: "bold",
+            display:"inline-block",
+            marginTop:"15px",
+            padding:"12px 22px",
+            background:"#25D366",
+            color:"white",
+            borderRadius:"6px",
+            textDecoration:"none",
+            fontWeight:"bold"
           }}
         >
-          Chat on WhatsApp
+          Message on WhatsApp
         </a>
       </section>
+
 
       {/* FOOTER */}
       <footer
         style={{
-          textAlign: "center",
-          padding: "30px",
-          background: "#f1f1f1",
-          marginTop: "40px",
+          textAlign:"center",
+          padding:"30px",
+          background:"#eeeeee"
         }}
       >
         © Patricia Ajjouri – Clinical Psychologist
       </footer>
 
     </main>
-  );
+  )
 }

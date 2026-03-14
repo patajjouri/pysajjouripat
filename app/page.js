@@ -128,14 +128,32 @@ export default function Home() {
 
       <hr style={{ width: "80%", margin: "0 auto", borderColor: "#d8d2c8" }} />
 
-      {/* CONTACT */}
-      <section style={{ padding: "80px 20px", maxWidth: "900px", margin: "0 auto" }}>
-        <h2 style={{ fontSize: "32px", marginBottom: "30px" }}>Contact</h2>
-        <p>Online psychotherapy available worldwide.</p>
-        <p style={{ marginTop: "10px" }}>
-          Languages: Arabic, English, Portuguese
-        </p>
-      </section>
+     {/* CONTACT */}
+<section style={{ padding: "80px 20px", maxWidth: "900px", margin: "0 auto", textAlign: "center" }}>
+  <h2 style={{ fontSize: "32px", marginBottom: "30px" }}>Contact</h2>
+
+  <p>Online psychotherapy available worldwide.</p>
+
+  <p style={{ marginTop: "10px" }}>
+    Languages: Arabic, English, Portuguese
+  </p>
+
+  <p style={{ marginTop: "25px", fontSize: "18px" }}>
+    Email: 
+    <br />
+    <a href="mailto:pyspatajjouri@gmail.com">
+      pyspatajjouri@gmail.com
+    </a>
+  </p>
+
+  <p style={{ marginTop: "15px", fontSize: "18px" }}>
+    WhatsApp: 
+    <br />
+    <a href="https://wa.me/551199816969" target="_blank">
+      +55 11 99816-969
+    </a>
+  </p>
+</section>
 
     </main>
   );

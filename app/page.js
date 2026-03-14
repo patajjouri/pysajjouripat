@@ -1,33 +1,39 @@
 export default function Home() {
   return (
-    <main
-      style={{
-        fontFamily: "serif",
-        backgroundColor: "#f5f1eb",
-        color: "#2d2d2d"
-      }}
-    >
+    <main style={{ fontFamily: "serif", backgroundColor: "#f5f1eb", color: "#2d2d2d" }}>
 
-      {/* HERO SECTION */}
-      <section
+      {/* NAVIGATION BAR */}
+      <nav
         style={{
-          position: "relative",
+          position: "fixed",
+          top: 0,
           width: "100%",
-          height: "80vh",
-          overflow: "hidden"
+          backgroundColor: "#f5f1eb",
+          borderBottom: "1px solid #ddd",
+          padding: "20px 40px",
+          display: "flex",
+          justifyContent: "space-between",
+          alignItems: "center",
+          zIndex: 1000
         }}
       >
+        <div style={{ fontSize: "20px" }}>Patricia Ajjouri</div>
+
+        <div style={{ display: "flex", gap: "30px", fontSize: "16px" }}>
+          <a href="#about" style={{ textDecoration: "none", color: "#2d2d2d" }}>About</a>
+          <a href="#practice" style={{ textDecoration: "none", color: "#2d2d2d" }}>Practice</a>
+          <a href="#contact" style={{ textDecoration: "none", color: "#2d2d2d" }}>Contact</a>
+        </div>
+      </nav>
+
+
+      {/* HERO SECTION */}
+      <section style={{ position: "relative", width: "100%", height: "90vh", overflow: "hidden", marginTop: "80px" }}>
+
         <div style={{ display: "flex", height: "100%" }}>
 
-          {/* LEFT — YOUR PHOTO */}
-          <div
-            style={{
-              position: "relative",
-              width: "50%",
-              height: "100%",
-              overflow: "hidden"
-            }}
-          >
+          {/* YOUR PHOTO */}
+          <div style={{ position: "relative", width: "50%", height: "100%" }}>
             <img
               src="/patricia.png"
               alt="Patricia Ajjouri"
@@ -35,13 +41,10 @@ export default function Home() {
                 width: "100%",
                 height: "100%",
                 objectFit: "cover",
-
-                /* COLOR HARMONY FILTER */
-                filter: "sepia(25%) brightness(105%) contrast(95%)"
+                filter: "grayscale(100%) contrast(105%)"
               }}
             />
 
-            {/* warm overlay */}
             <div
               style={{
                 position: "absolute",
@@ -54,29 +57,23 @@ export default function Home() {
             />
           </div>
 
-          {/* RIGHT — THERAPY SPACE */}
-          <div
-            style={{
-              width: "50%",
-              height: "100%",
-              overflow: "hidden"
-            }}
-          >
+
+          {/* THERAPY SOFA */}
+          <div style={{ width: "50%", height: "100%" }}>
             <img
               src="/Therapy.jpg"
-              alt="Therapy Space"
+              alt="Therapy space"
               style={{
                 width: "100%",
                 height: "100%",
                 objectFit: "cover",
-
-                /* match warmth */
-                filter: "brightness(102%) contrast(98%)"
+                filter: "grayscale(40%) brightness(95%)"
               }}
             />
           </div>
 
         </div>
+
 
         {/* CENTER TEXT */}
         <div
@@ -84,91 +81,58 @@ export default function Home() {
             position: "absolute",
             top: "50%",
             left: "50%",
-            transform: "translate(-50%, -50%)",
-            textAlign: "center",
-            backgroundColor: "rgba(245,241,235,0.75)",
-            backdropFilter: "blur(4px)",
-            padding: "40px 60px"
+            transform: "translate(-50%,-50%)",
+            backgroundColor: "rgba(245,241,235,0.8)",
+            padding: "40px 70px",
+            textAlign: "center"
           }}
         >
-          <h1
-            style={{
-              fontSize: "48px",
-              margin: 0,
-              fontWeight: 400
-            }}
-          >
+          <h1 style={{ fontSize: "48px", margin: 0, fontWeight: "400" }}>
             Patricia Ajjouri
           </h1>
 
-          <p
-            style={{
-              marginTop: "10px",
-              letterSpacing: "2px"
-            }}
-          >
+          <p style={{ marginTop: "10px", letterSpacing: "2px" }}>
             CLINICAL PSYCHOLOGIST | PSYCHOANALYTIC APPROACH
           </p>
         </div>
+
       </section>
 
+
       {/* STATEMENT */}
-      <section
-        style={{
-          textAlign: "center",
-          padding: "60px 20px"
-        }}
-      >
-        <p
-          style={{
-            fontSize: "20px",
-            maxWidth: "700px",
-            margin: "0 auto"
-          }}
-        >
+      <section style={{ textAlign: "center", padding: "70px 20px" }}>
+        <p style={{ fontSize: "20px", maxWidth: "700px", margin: "0 auto" }}>
           Supporting adults in their emotional processes through a thoughtful,
           ethical, and attentive clinical space.
         </p>
       </section>
 
+
       <hr style={{ width: "80%", margin: "0 auto", borderColor: "#d8d2c8" }} />
 
+
       {/* ABOUT */}
-      <section
-        style={{
-          padding: "80px 20px",
-          maxWidth: "900px",
-          margin: "0 auto"
-        }}
-      >
-        <h2 style={{ fontSize: "32px", marginBottom: "30px" }}>
-          About
-        </h2>
+      <section id="about" style={{ padding: "80px 20px", maxWidth: "900px", margin: "0 auto" }}>
+        <h2 style={{ fontSize: "32px", marginBottom: "30px" }}>About</h2>
 
         <p style={{ lineHeight: "1.8" }}>
-          I am a licensed Clinical Psychologist grounded in the psychoanalytic
-          approach, offering a space where speech, listening, and subjective
-          experience are central.
+          I am a licensed Clinical Psychologist grounded in the psychoanalytic approach,
+          offering a space where speech, listening, and subjective experience are central.
         </p>
 
-        <p
-          style={{
-            lineHeight: "1.8",
-            marginTop: "20px"
-          }}
-        >
-          I am currently in my second year of specialization in Clinical
-          Attendance in Sexual Diversity and Gender at IPPERG, and as a
-          student at Fórum Lacan São Paulo, I continue my studies in
-          contemporary psychoanalytic clinic through the Psicanálise
-          platform.
+        <p style={{ lineHeight: "1.8", marginTop: "20px" }}>
+          I am currently in my second year of specialization in Clinical Attendance in
+          Sexual Diversity and Gender at IPPERG, and as a student at Fórum Lacan São Paulo,
+          I continue my studies in contemporary psychoanalytic clinic through the Psicanálise platform.
         </p>
       </section>
 
+
       <hr style={{ width: "80%", margin: "0 auto", borderColor: "#d8d2c8" }} />
 
-      {/* PRACTICE AREAS */}
-      <section
+
+      {/* PRACTICE */}
+      <section id="practice"
         style={{
           display: "flex",
           flexWrap: "wrap",
@@ -179,10 +143,9 @@ export default function Home() {
           margin: "0 auto"
         }}
       >
+
         <div style={{ flex: "1", minWidth: "300px" }}>
-          <h2 style={{ fontSize: "32px", marginBottom: "30px" }}>
-            Practice Areas
-          </h2>
+          <h2 style={{ fontSize: "32px", marginBottom: "30px" }}>Practice Areas</h2>
 
           <ul style={{ lineHeight: "2" }}>
             <li>Adult psychotherapy</li>
@@ -193,33 +156,26 @@ export default function Home() {
           </ul>
         </div>
 
+
         <div style={{ flex: "1", minWidth: "300px" }}>
-          <h2 style={{ fontSize: "32px", marginBottom: "30px" }}>
-            Community Engagement
-          </h2>
+          <h2 style={{ fontSize: "32px", marginBottom: "30px" }}>Community Engagement</h2>
 
           <p style={{ lineHeight: "1.8" }}>
-            I volunteer with ESOU, supporting the LGBTQIAPIA+ elderly
-            community, and with Sout, assisting Palestinian refugees with
-            mental health care and psychosocial support.
+            I volunteer with ESOU supporting the LGBTQIAPIA+ elderly community
+            and with Sout assisting Palestinian refugees with mental health care
+            and psychosocial support.
           </p>
         </div>
+
       </section>
+
 
       <hr style={{ width: "80%", margin: "0 auto", borderColor: "#d8d2c8" }} />
 
+
       {/* CONTACT */}
-      <section
-        style={{
-          padding: "80px 20px",
-          maxWidth: "900px",
-          margin: "0 auto",
-          textAlign: "center"
-        }}
-      >
-        <h2 style={{ fontSize: "32px", marginBottom: "30px" }}>
-          Contact
-        </h2>
+      <section id="contact" style={{ padding: "80px 20px", maxWidth: "900px", margin: "0 auto" }}>
+        <h2 style={{ fontSize: "32px", marginBottom: "30px" }}>Contact</h2>
 
         <p>Online psychotherapy available worldwide.</p>
 
@@ -228,26 +184,36 @@ export default function Home() {
         </p>
 
         <p style={{ marginTop: "20px" }}>
-          Email: pyspatajjouri@gmail.com
+          Email: <a href="mailto:pyspatajjouri@gmail.com">pyspatajjouri@gmail.com</a>
         </p>
 
         <p>
-          Phone / WhatsApp: +55 11 99816-969
+          WhatsApp: <a href="https://wa.me/551199816969">+55 11 99816-969</a>
         </p>
+
       </section>
 
-      {/* FOOTER */}
-      <footer
+
+      {/* FLOATING WHATSAPP BUTTON */}
+      <a
+        href="https://wa.me/551199816969"
+        target="_blank"
         style={{
-          textAlign: "center",
-          padding: "40px",
-          marginTop: "40px",
-          fontSize: "14px",
-          color: "#777"
+          position: "fixed",
+          bottom: "25px",
+          right: "25px",
+          backgroundColor: "#25D366",
+          color: "white",
+          borderRadius: "50px",
+          padding: "14px 20px",
+          textDecoration: "none",
+          fontWeight: "bold",
+          boxShadow: "0 4px 10px rgba(0,0,0,0.2)"
         }}
       >
-        © {new Date().getFullYear()} Patricia Ajjouri — Clinical Psychologist
-      </footer>
+        WhatsApp
+      </a>
+
 
     </main>
   );
